@@ -180,7 +180,7 @@ img {
 
 .hero h1 {
   max-width: 11ch;
-  font-size: clamp(3.3rem, 7vw, 6.1rem);
+  font-size: clamp(2.8rem, 5.8vw, 4.9rem);
 }
 
 .hero-text {
@@ -652,7 +652,7 @@ img {
 
   .hero h1 {
     max-width: none;
-    font-size: clamp(2.6rem, 14vw, 4.2rem);
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
   }
 
   .stat-strip,
