@@ -98,7 +98,7 @@ img {
 }
 
 .site-nav a,
-.header-link {
+.header-note {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
   color: var(--muted);
@@ -110,7 +110,7 @@ img {
 
 .site-nav a:hover,
 .site-nav a.is-active,
-.header-link:hover {
+.header-note:hover {
   background: rgba(16, 33, 45, 0.08);
   color: var(--text);
   transform: translateY(-1px);
