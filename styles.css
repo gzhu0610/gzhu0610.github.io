@@ -126,7 +126,6 @@ img {
 
 .hero-copy,
 .signal-panel,
-.journey-card,
 .focus-card,
 .timeline-item,
 .project-card,
@@ -342,92 +341,6 @@ img {
   padding-right: 1rem;
   color: var(--muted);
   font-size: 1.05rem;
-}
-
-.about-side {
-  display: grid;
-  gap: 1rem;
-}
-
-.journey-card {
-  position: relative;
-  padding: 1.55rem;
-  border-radius: var(--radius-lg);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)),
-    linear-gradient(135deg, rgba(31, 119, 114, 0.08), rgba(191, 101, 48, 0.16));
-  overflow: hidden;
-}
-
-.journey-card::after {
-  content: "";
-  position: absolute;
-  inset: auto -8% -18% auto;
-  width: 11rem;
-  height: 11rem;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(191, 101, 48, 0.18), transparent 72%);
-}
-
-.journey-card h3 {
-  position: relative;
-  margin: 0;
-  font-size: 1.5rem;
-  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-}
-
-.journey-copy {
-  position: relative;
-  margin: 0.9rem 0 0;
-  max-width: 52ch;
-  color: var(--muted);
-}
-
-.journey-route {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.85rem;
-  margin-top: 1.25rem;
-}
-
-.journey-stop {
-  position: relative;
-  padding: 1rem 1rem 0.95rem;
-  border: 1px solid rgba(16, 33, 45, 0.1);
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.68);
-}
-
-.journey-stop:not(:last-child)::after {
-  content: "->";
-  position: absolute;
-  right: -0.72rem;
-  top: 50%;
-  z-index: 1;
-  transform: translateY(-50%);
-  color: var(--accent);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-.journey-city,
-.journey-note {
-  position: relative;
-  margin: 0;
-}
-
-.journey-city {
-  font-size: 1.02rem;
-  font-weight: 700;
-}
-
-.journey-note {
-  margin-top: 0.3rem;
-  color: var(--muted);
-  font-size: 0.88rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
 .focus-grid {
@@ -662,8 +575,7 @@ img {
 
   .button,
   .site-nav a,
-  .header-note,
-  .inline-link {
+  .header-link {
     transition: none;
   }
 }
@@ -696,14 +608,6 @@ img {
   .focus-grid,
   .project-grid {
     grid-template-columns: 1fr;
-  }
-
-  .journey-route {
-    grid-template-columns: 1fr;
-  }
-
-  .journey-stop:not(:last-child)::after {
-    content: "";
   }
 
   .project-featured,
