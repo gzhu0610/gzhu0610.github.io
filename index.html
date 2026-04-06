@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for Guanyu Zhu, a UBC Electrical Engineering student focused on embedded systems, power electronics, and robotics."
+    />
+    <title>Guanyu Zhu | Embedded Systems &amp; Hardware</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#top">Guanyu Zhu</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about" data-section-link="about">About</a>
+          <a href="#experience" data-section-link="experience">Experience</a>
+          <a href="#projects" data-section-link="projects">Projects</a>
+          <a href="#skills" data-section-link="skills">Skills</a>
+          <a href="#contact" data-section-link="contact">Contact</a>
+        </nav>
+        <a class="header-link" href="assets/Resume_GuanyuZhu.pdf" download>Resume</a>
+      </header>
+
+      <main id="top">
+        <section class="hero reveal" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Electrical Engineering • UBC • Co-op Available</p>
+            <h1 id="hero-title">
+              Building embedded systems where firmware, power, and hardware all
+              have to work in the real world.
+            </h1>
+            <p class="hero-text">
+              I'm Guanyu Zhu, an Electrical Engineering student at the
+              University of British Columbia. I design and debug systems across
+              embedded firmware, power electronics, PCB layout, and control,
+              with a focus on getting ideas off the whiteboard and onto the
+              bench.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:guanyubj2006@gmail.com"
+                >Email Me</a
+              >
+              <a
+                class="button button-secondary"
+                href="https://linkedin.com/in/gzhu06"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+            <dl class="stat-strip" aria-label="Highlights">
+              <div>
+                <dt>Expected graduation</dt>
+                <dd>May 2029</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Vancouver, BC</dd>
+              </div>
+              <div>
+                <dt>Co-op terms</dt>
+                <dd>4 to 16 months</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="signal-panel" aria-label="Current work">
+            <p class="panel-label">Current Signals</p>
+            <h2>What I like building</h2>
+            <ul class="signal-list">
+              <li>
+                1 kHz deterministic ESP32 control loops for high-fidelity haptic
+                feedback
+              </li>
+              <li>
+                Power stages and PCB layouts that survive real current, noise,
+                and debugging
+              </li>
+              <li>
+                Sensor-driven robots with closed-loop behavior, embedded state
+                machines, and hardware validation
+              </li>
+            </ul>
+            <div class="signal-note">
+              <span>Looking for</span>
+              <p>
+                Co-op opportunities in embedded systems, robotics, hardware, and
+                power electronics.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <section id="about" class="section reveal" aria-labelledby="about-title">
+          <div class="section-heading">
+            <p class="section-kicker">Profile</p>
+            <h2 id="about-title">I like bridging equations, firmware, and bench-ready hardware.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                My work usually sits at the intersection of sensing, control,
+                power, and debugging. I enjoy projects where the design starts
+                with theory and calculations, then has to prove itself through
+                layout decisions, timing constraints, and real measurements.
+              </p>
+              <p>
+                Across robotics and personal projects, I've built control loops,
+                converters, analog front ends, and complete embedded systems with
+                a strong bias toward iteration, validation, and understanding why
+                the hardware behaves the way it does.
+              </p>
+            </div>
+
+            <div class="focus-grid">
+              <article class="focus-card">
+                <p class="focus-label">Embedded Control</p>
+                <h3>Real-time firmware</h3>
+                <p>
+                  Deterministic loops, microcontroller peripherals, sensor
+                  pipelines, and control logic that needs to respond cleanly.
+                </p>
+              </article>
+              <article class="focus-card">
+                <p class="focus-label">Power Design</p>
+                <h3>Converters and power stages</h3>
+                <p>
+                  Component selection, switching layouts, grounding strategy, and
+                  hardware tradeoffs grounded in circuit equations.
+                </p>
+              </article>
+              <article class="focus-card">
+                <p class="focus-label">Bring-up</p>
+                <h3>Test, debug, refine</h3>
+                <p>
+                  Oscilloscope-first validation, failure analysis, and systematic
+                  debugging that closes the loop between design and reality.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="experience"
+          class="section reveal"
+          aria-labelledby="experience-title"
+        >
+          <div class="section-heading">
+            <p class="section-kicker">Experience</p>
+            <h2 id="experience-title">Hands-on engineering across robotics firmware and power electronics.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-org">UBC Open Robotics</p>
+                <h3>Haptic Knob Project Firmware Member</h3>
+                <p>Sept. 2025 – Present</p>
+                <p>Vancouver, BC</p>
+                <a
+                  class="inline-link"
+                  href="https://github.com/Haptic-Knob-by-Open-Robotics/Haptic-Knob"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View repository</a
+                >
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Developed firmware for a haptic interface that emulates complex
+                  electrical components through responsive motor control.
+                </p>
+                <ul>
+                  <li>
+                    Engineered a deterministic 1 kHz control loop on ESP32 with
+                    FreeRTOS for realistic impedance emulation.
+                  </li>
+                  <li>
+                    Built a multi-stage sensing and control pipeline using SSI
+                    magnetic encoders, external SPI ADCs, and real-time PID
+                    current control.
+                  </li>
+                  <li>
+                    Implemented discrete-time models that translated angular
+                    motion into motor torque for underdamped and critically
+                    damped RLC behavior.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-org">UBC Open Robotics</p>
+                <h3>Power Team Member, RoboCup@Home</h3>
+                <p>Sept. 2024 – Sept. 2025</p>
+                <p>Vancouver, BC</p>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Designed and validated robot power hardware, from converter
+                  sizing to PCB implementation and bench debugging.
+                </p>
+                <ul>
+                  <li>
+                    Designed a 48 V to 5 V synchronous buck converter around the
+                    LM706A0 to supply a regulated 5 V, 3 A rail.
+                  </li>
+                  <li>
+                    Selected magnetics, compensation, switching frequency, and
+                    current sensing from converter requirements and design
+                    equations.
+                  </li>
+                  <li>
+                    Laid out a 2-layer Altium PCB with attention to switching
+                    loop area, current return paths, via stitching, and capacitor
+                    placement.
+                  </li>
+                  <li>
+                    Validated switching behavior and load response, then tracked
+                    down a PCB ground fault through systematic hardware
+                    debugging.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="section reveal" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2 id="projects-title">Selected builds across robotics, reflow control, and portable power.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-featured">
+              <p class="project-date">Feb. 2026 – Mar. 2026</p>
+              <h3>Field-Following Robot</h3>
+              <p class="project-stack">
+                STM32, EFM8, C, Analog Front End
+              </p>
+              <a
+                class="inline-link"
+                href="https://github.com/ELEC-291-2026/Project2.0"
+                target="_blank"
+                rel="noreferrer"
+                >View repository</a
+              >
+              <p>
+                Built a dual-microcontroller autonomous robot with magnetic wire
+                tracking, obstacle awareness, and selectable path behaviors.
+              </p>
+              <ul>
+                <li>
+                  Designed a 3-channel LC tank analog front end for resonant
+                  magnetic wire detection, amplification, and peak detection.
+                </li>
+                <li>
+                  Implemented a four-state control system for follow,
+                  intersection handling, action selection, and recovery.
+                </li>
+                <li>
+                  Integrated Time-of-Flight sensing over I2C to halt forward
+                  motion under a 100 mm obstacle threshold while preserving turn
+                  and reverse control.
+                </li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <p class="project-date">Jan. 2026 – Feb. 2026</p>
+              <h3>Reflow Oven Controller</h3>
+              <p class="project-stack">
+                8052 Assembly, DE10-Lite, Python, Analog Signal Conditioning
+              </p>
+              <a
+                class="inline-link"
+                href="https://github.com/ELEC-291-2026/Project1.0"
+                target="_blank"
+                rel="noreferrer"
+                >View repository</a
+              >
+              <p>
+                Built a closed-loop reflow oven controller with custom sensing,
+                safe-state behavior, and live temperature visualization.
+              </p>
+              <ul>
+                <li>
+                  Created a thermocouple analog front end and used an 8052
+                  soft-core to control an AC heating element through SSR-driven
+                  PWM.
+                </li>
+                <li>
+                  Added hold-to-start, thermal deviation monitoring, and
+                  emergency stop behavior to keep the system fail-safe.
+                </li>
+                <li>
+                  Developed a Python serial interface for real-time reflow curve
+                  tracking during operation.
+                </li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <p class="project-date">Sept. 2024 – Oct. 2024</p>
+              <h3>Wireless Charging Power Bank</h3>
+              <p class="project-stack">
+                Power Electronics, Battery Systems, 3D Design
+              </p>
+              <p>
+                Built a portable wireless charger that packaged battery
+                management, power conversion, and Qi transmission into a custom
+                enclosure.
+              </p>
+              <ul>
+                <li>
+                  Integrated Li-ion battery management, a charging IC, buck-boost
+                  conversion, wireless charging, and battery indication.
+                </li>
+                <li>
+                  Packaged the full system into a custom 3D-printed enclosure for
+                  portability and protection.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="section reveal" aria-labelledby="skills-title">
+          <div class="section-heading">
+            <p class="section-kicker">Skills</p>
+            <h2 id="skills-title">Tools and technical areas I work with most.</h2>
+          </div>
+
+          <div class="skills-layout">
+            <article class="skills-card">
+              <h3>Circuit Design &amp; Hardware</h3>
+              <div class="chip-group">
+                <span>PCB Design &amp; Layout</span>
+                <span>Altium Designer</span>
+                <span>Power Electronics</span>
+                <span>LTspice</span>
+                <span>Hardware Prototyping</span>
+                <span>Hardware Debugging</span>
+                <span>High-Current PCB Layout</span>
+                <span>SMT/THT Soldering</span>
+                <span>Oscilloscope</span>
+                <span>Multimeter</span>
+                <span>Electronic Load Testing</span>
+              </div>
+            </article>
+
+            <article class="skills-card">
+              <h3>Embedded Systems &amp; Firmware</h3>
+              <div class="chip-group">
+                <span>C/C++</span>
+                <span>8051/8052 Assembly</span>
+                <span>Python</span>
+                <span>FreeRTOS</span>
+                <span>SimpleFOC</span>
+                <span>ESP32</span>
+                <span>STM32</span>
+                <span>Arduino IDE</span>
+                <span>SPI</span>
+                <span>I2C</span>
+                <span>UART</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact-section reveal">
+          <div class="contact-card">
+            <p class="section-kicker">Contact</p>
+            <h2>Open to embedded, robotics, and hardware-focused co-op roles.</h2>
+            <p>
+              If you're building systems that combine electronics, firmware, and
+              physical behavior, I'd love to connect.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:guanyubj2006@gmail.com">guanyubj2006@gmail.com</a>
+              <a href="tel:+16723806009">+1 (672) 380-6009</a>
+              <a
+                href="https://linkedin.com/in/gzhu06"
+                target="_blank"
+                rel="noreferrer"
+                >linkedin.com/in/gzhu06</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Guanyu Zhu</p>
+        <a href="assets/Resume_GuanyuZhu.pdf" download>Download resume</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
