@@ -15,9 +15,9 @@
       <header class="site-header">
         <a class="wordmark" href="#top">Guanyu Zhu</a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="#about" data-section-link="about">About</a>
-          <a href="#experience" data-section-link="experience">Experience</a>
           <a href="#projects" data-section-link="projects">Projects</a>
+          <a href="#experience" data-section-link="experience">Experience</a>
+          <a href="#about" data-section-link="about">About</a>
           <a href="#skills" data-section-link="skills">Skills</a>
           <a href="#contact" data-section-link="contact">Contact</a>
         </nav>
@@ -27,38 +27,30 @@
       <main id="top">
         <section class="hero reveal" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <p class="eyebrow">Electrical Engineering • UBC • Co-op Available</p>
+            <p class="eyebrow">Guanyu Zhu • UBC Electrical Engineering • Co-op Available</p>
             <h1 id="hero-title">
-              Building embedded systems where firmware, power, and hardware all
-              have to work in the real world.
+              Projects in robotics, power electronics, and embedded systems.
             </h1>
             <p class="hero-text">
-              I'm Guanyu Zhu, an Electrical Engineering student at the
-              University of British Columbia. I design and debug systems across
-              embedded firmware, power electronics, PCB layout, and control,
-              with a focus on getting ideas off the whiteboard and onto the
-              bench.
+              This portfolio is built around working hardware: a field-following
+              robot, a reflow oven controller, a buck converter PCB, and
+              firmware-heavy robotics work that had to be designed, tested, and
+              debugged on the bench.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="mailto:guanyubj2006@gmail.com"
+              <a class="button button-primary" href="#projects">View Projects</a>
+              <a class="button button-secondary" href="mailto:guanyubj2006@gmail.com"
                 >Email Me</a
-              >
-              <a
-                class="button button-secondary"
-                href="https://linkedin.com/in/gzhu06"
-                target="_blank"
-                rel="noreferrer"
-                >LinkedIn</a
               >
             </div>
             <dl class="stat-strip" aria-label="Highlights">
               <div>
-                <dt>Expected graduation</dt>
-                <dd>May 2029</dd>
+                <dt>Featured builds</dt>
+                <dd>4 systems</dd>
               </div>
               <div>
-                <dt>Location</dt>
-                <dd>Vancouver, BC</dd>
+                <dt>Live demos</dt>
+                <dd>2 videos</dd>
               </div>
               <div>
                 <dt>Co-op terms</dt>
@@ -67,31 +59,174 @@
             </dl>
           </div>
 
-          <aside class="signal-panel" aria-label="Current work">
-            <p class="panel-label">Current Signals</p>
-            <h2>What I like building</h2>
-            <ul class="signal-list">
-              <li>
-                10 kHz deterministic ESP32 control loops for high-fidelity haptic
-                feedback
-              </li>
-              <li>
-                Power stages and PCB layouts that survive real current, noise,
-                and debugging
-              </li>
-              <li>
-                Sensor-driven robots with closed-loop behavior, embedded state
-                machines, and hardware validation
-              </li>
-            </ul>
-            <div class="signal-note">
-              <span>Looking for</span>
-              <p>
-                Co-op opportunities in hardware, embedded systems, robotics, and
-                power electronics.
-              </p>
+          <aside class="signal-panel project-panel" aria-label="Featured projects">
+            <p class="panel-label">Project Highlights</p>
+            <h2>Start with the builds.</h2>
+            <div class="highlight-list">
+              <a class="highlight-card" href="#field-following-robot">
+                <span class="highlight-tag">ELEC 291 • Demo</span>
+                <strong>Field-Following Robot</strong>
+                <p>
+                  Dual-microcontroller robot with magnetic wire tracking,
+                  obstacle awareness, and path behavior logic.
+                </p>
+              </a>
+              <a class="highlight-card" href="#reflow-oven">
+                <span class="highlight-tag">ELEC 291 • Demo</span>
+                <strong>Reflow Oven Controller</strong>
+                <p>
+                  Closed-loop thermal control with custom sensing, safe-state
+                  behavior, and live temperature tracking.
+                </p>
+              </a>
+              <a class="highlight-card" href="#buck-converter">
+                <span class="highlight-tag">Open Robotics • PCB</span>
+                <strong>48 V to 5 V Buck Converter</strong>
+                <p>
+                  LM706A0-based converter design with schematic work, 2-layer
+                  layout, bring-up, and debugging.
+                </p>
+              </a>
             </div>
           </aside>
+        </section>
+
+        <section id="projects" class="section reveal" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2 id="projects-title">Working builds with demos, PCB work, and hardware validation.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article id="field-following-robot" class="project-card project-featured">
+              <p class="project-date">Feb. 2026 – Mar. 2026</p>
+              <h3>Field-Following Robot</h3>
+              <p class="project-stack">
+                STM32, EFM8, C, Analog Front End
+              </p>
+              <div class="project-links">
+                <a
+                  class="inline-link"
+                  href="https://github.com/ELEC-291-2026/Project2.0.git"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub repo</a
+                >
+                <a
+                  class="inline-link"
+                  href="https://www.youtube.com/watch?v=U5jY5kz8_YE&amp;t=2s"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Demo video</a
+                >
+              </div>
+              <div class="project-video">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/U5jY5kz8_YE?start=2"
+                  title="Field-Following Robot demo video"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p>
+                Built a dual-microcontroller autonomous robot with magnetic wire
+                tracking, obstacle awareness, and selectable path behaviors.
+              </p>
+              <ul>
+                <li>
+                  Designed a 3-channel LC tank analog front end for resonant
+                  magnetic wire detection, amplification, and peak detection.
+                </li>
+                <li>
+                  Implemented a four-state control system for follow,
+                  intersection handling, action selection, and recovery.
+                </li>
+                <li>
+                  Integrated Time-of-Flight sensing over I2C to halt forward
+                  motion under a 100 mm obstacle threshold while preserving turn
+                  and reverse control.
+                </li>
+              </ul>
+            </article>
+
+            <article id="reflow-oven" class="project-card">
+              <p class="project-date">Jan. 2026 – Feb. 2026</p>
+              <h3>Reflow Oven Controller</h3>
+              <p class="project-stack">
+                8052 Assembly, DE10-Lite, Python, Analog Signal Conditioning
+              </p>
+              <div class="project-links">
+                <a
+                  class="inline-link"
+                  href="https://github.com/ELEC-291-2026/Project1.0.git"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub repo</a
+                >
+                <a
+                  class="inline-link"
+                  href="https://www.youtube.com/watch?v=zQPqsqj1WKY&amp;t=204s"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Demo video</a
+                >
+              </div>
+              <div class="project-video">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/zQPqsqj1WKY?start=204"
+                  title="Reflow Oven Controller demo video"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p>
+                Built a closed-loop reflow oven controller with custom sensing,
+                safe-state behavior, and live temperature visualization.
+              </p>
+              <ul>
+                <li>
+                  Created a thermocouple analog front end and used an 8052
+                  soft-core to control an AC heating element through SSR-driven
+                  PWM.
+                </li>
+                <li>
+                  Added hold-to-start, thermal deviation monitoring, and
+                  emergency stop behavior to keep the system fail-safe.
+                </li>
+                <li>
+                  Developed a Python serial interface for real-time reflow curve
+                  tracking during operation.
+                </li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <p class="project-date">Sept. 2024 – Oct. 2024</p>
+              <h3>Wireless Charging Power Bank</h3>
+              <p class="project-stack">
+                Power Electronics, Battery Systems, 3D Design
+              </p>
+              <p>
+                Built a portable wireless charger that packaged battery
+                management, power conversion, and Qi transmission into a custom
+                enclosure.
+              </p>
+              <ul>
+                <li>
+                  Integrated Li-ion battery management, a charging IC, buck-boost
+                  conversion, wireless charging, and battery indication.
+                </li>
+                <li>
+                  Packaged the full system into a custom 3D-printed enclosure for
+                  portability and protection.
+                </li>
+              </ul>
+            </article>
+          </div>
         </section>
 
         <section id="about" class="section reveal" aria-labelledby="about-title">
@@ -194,7 +329,7 @@
               </div>
             </article>
 
-            <article class="timeline-item">
+            <article id="buck-converter" class="timeline-item">
               <div class="timeline-meta">
                 <p class="timeline-org">UBC Open Robotics</p>
                 <h3>Power Team Member, RoboCup@Home</h3>
@@ -246,144 +381,6 @@
                   </li>
                 </ul>
               </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="projects" class="section reveal" aria-labelledby="projects-title">
-          <div class="section-heading">
-            <p class="section-kicker">Projects</p>
-            <h2 id="projects-title">Selected builds across robotics, reflow control, and portable power.</h2>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card project-featured">
-              <p class="project-date">Feb. 2026 – Mar. 2026</p>
-              <h3>Field-Following Robot</h3>
-              <p class="project-stack">
-                STM32, EFM8, C, Analog Front End
-              </p>
-              <div class="project-links">
-                <a
-                  class="inline-link"
-                  href="https://github.com/ELEC-291-2026/Project2.0.git"
-                  target="_blank"
-                  rel="noreferrer"
-                  >GitHub repo</a
-                >
-                <a
-                  class="inline-link"
-                  href="https://www.youtube.com/watch?v=U5jY5kz8_YE&amp;t=2s"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Demo video</a
-                >
-              </div>
-              <div class="project-video">
-                <iframe
-                  src="https://www.youtube-nocookie.com/embed/U5jY5kz8_YE?start=2"
-                  title="Field-Following Robot demo video"
-                  loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <p>
-                Built a dual-microcontroller autonomous robot with magnetic wire
-                tracking, obstacle awareness, and selectable path behaviors.
-              </p>
-              <ul>
-                <li>
-                  Designed a 3-channel LC tank analog front end for resonant
-                  magnetic wire detection, amplification, and peak detection.
-                </li>
-                <li>
-                  Implemented a four-state control system for follow,
-                  intersection handling, action selection, and recovery.
-                </li>
-                <li>
-                  Integrated Time-of-Flight sensing over I2C to halt forward
-                  motion under a 100 mm obstacle threshold while preserving turn
-                  and reverse control.
-                </li>
-              </ul>
-            </article>
-
-            <article class="project-card">
-              <p class="project-date">Jan. 2026 – Feb. 2026</p>
-              <h3>Reflow Oven Controller</h3>
-              <p class="project-stack">
-                8052 Assembly, DE10-Lite, Python, Analog Signal Conditioning
-              </p>
-              <div class="project-links">
-                <a
-                  class="inline-link"
-                  href="https://github.com/ELEC-291-2026/Project1.0.git"
-                  target="_blank"
-                  rel="noreferrer"
-                  >GitHub repo</a
-                >
-                <a
-                  class="inline-link"
-                  href="https://www.youtube.com/watch?v=zQPqsqj1WKY&amp;t=204s"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Demo video</a
-                >
-              </div>
-              <div class="project-video">
-                <iframe
-                  src="https://www.youtube-nocookie.com/embed/zQPqsqj1WKY?start=204"
-                  title="Reflow Oven Controller demo video"
-                  loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <p>
-                Built a closed-loop reflow oven controller with custom sensing,
-                safe-state behavior, and live temperature visualization.
-              </p>
-              <ul>
-                <li>
-                  Created a thermocouple analog front end and used an 8052
-                  soft-core to control an AC heating element through SSR-driven
-                  PWM.
-                </li>
-                <li>
-                  Added hold-to-start, thermal deviation monitoring, and
-                  emergency stop behavior to keep the system fail-safe.
-                </li>
-                <li>
-                  Developed a Python serial interface for real-time reflow curve
-                  tracking during operation.
-                </li>
-              </ul>
-            </article>
-
-            <article class="project-card">
-              <p class="project-date">Sept. 2024 – Oct. 2024</p>
-              <h3>Wireless Charging Power Bank</h3>
-              <p class="project-stack">
-                Power Electronics, Battery Systems, 3D Design
-              </p>
-              <p>
-                Built a portable wireless charger that packaged battery
-                management, power conversion, and Qi transmission into a custom
-                enclosure.
-              </p>
-              <ul>
-                <li>
-                  Integrated Li-ion battery management, a charging IC, buck-boost
-                  conversion, wireless charging, and battery indication.
-                </li>
-                <li>
-                  Packaged the full system into a custom 3D-printed enclosure for
-                  portability and protection.
-                </li>
-              </ul>
             </article>
           </div>
         </section>
