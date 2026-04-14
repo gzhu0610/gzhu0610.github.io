@@ -425,6 +425,33 @@ img {
   border: 0;
 }
 
+.project-gallery {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.project-figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(16, 33, 45, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.project-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.project-figure figcaption {
+  padding: 0.75rem 0.95rem 0.85rem;
+  border-top: 1px solid rgba(16, 33, 45, 0.08);
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
 .timeline {
   position: relative;
   display: grid;
