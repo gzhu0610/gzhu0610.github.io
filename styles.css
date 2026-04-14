@@ -425,13 +425,14 @@ img {
   border: 0;
 }
 
-.project-gallery {
+.media-gallery {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.9rem;
   margin-top: 1rem;
 }
 
-.project-figure {
+.media-figure {
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(16, 33, 45, 0.12);
@@ -439,12 +440,12 @@ img {
   background: rgba(255, 255, 255, 0.8);
 }
 
-.project-figure img {
+.media-figure img {
   width: 100%;
   height: auto;
 }
 
-.project-figure figcaption {
+.media-figure figcaption {
   padding: 0.75rem 0.95rem 0.85rem;
   border-top: 1px solid rgba(16, 33, 45, 0.08);
   color: var(--muted);
@@ -676,6 +677,10 @@ img {
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .media-gallery {
+    grid-template-columns: 1fr;
   }
 }
 
